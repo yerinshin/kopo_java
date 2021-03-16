@@ -22,10 +22,7 @@ public class GugudanMain {
 //		gu.printAll();
 		
 		int startDan = gu.getDan("시작단을 입력 : ");
-		sc.nextLine();
-		
 		int endDan = gu.getDan("종료단을 입력 : ");
-		sc.nextLine();
 		
 		gu.print(startDan, endDan);
 
