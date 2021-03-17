@@ -1,8 +1,5 @@
 package kr.ac.kopo.day07.hw;
 
-import java.util.Scanner;
-
-
 public class IcecreamMain {
 
 	public static void main(String[] args) {
@@ -12,7 +9,7 @@ public class IcecreamMain {
 		int num = ice.getNum("아이스크림 몇 개 구입할꺼야 ? : ");
 		
 		Icecream[] iceArr = ice.getIcecream(num);
-		ice.print(iceArr);
+		ice.printList(iceArr);
 		
 
 	}
