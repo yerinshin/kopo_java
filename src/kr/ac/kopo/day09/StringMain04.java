@@ -31,7 +31,7 @@ public class StringMain04 {
 		System.out.println("replace() 전 : " + str);
 		
 //		str.replace('l', 'r');
-		str.replace("ll", "rrrrrrrr");
+		str = str.replace("l", "r");
 		System.out.println("replace() 후 : " +str);
 		
 		System.out.println("----------------------------------------------");

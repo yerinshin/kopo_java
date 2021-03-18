@@ -1,7 +1,5 @@
 package kr.ac.kopo.day09.hw;
 
-import java.util.Arrays;
-
 public class StringUtil {
 	
 	boolean isUpperChar(char c) {
@@ -67,4 +65,21 @@ public class StringUtil {
 			System.out.print(ch);
 			}
 	}
+	
+	
+	public static int checkChar(String strData, char ch) {
+		int cnt = 0;
+		for(int i =0; i < strData.length(); i++) {
+			char c = strData.charAt(i);
+			if(c == ch)	cnt ++;
+		}
+		return cnt;
+	}
+	
+	public static String removeChar(String oriStr, char delChar) {
+		String delStr = String.valueOf(delChar);
+		oriStr = oriStr.replace(delStr, "");
+		return oriStr;
+	}
+	
 }
