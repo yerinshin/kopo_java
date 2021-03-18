@@ -50,6 +50,7 @@ public class StringMain04 {
 		System.out.println("----------------------------------------------");
 		
 		str = "홍길동전:허균:조선시대";
+		
 		String[] strArr = str.split(":");
 		System.out.println(Arrays.toString(strArr));
 		
