@@ -43,6 +43,38 @@ public class StringUtil {
 		}
 	}
 	
+	/// 2,3,4 > 수업시간 코드
+	public String reverseString02(String str) {
+		
+		char[] chars = new char[str.length()];
+		for(int i = str.length() -1, j =0; i >=0; i--) {
+			chars[j++] = str.charAt(i);
+		}
+		return new String(chars);
+	}
+	
+	public String reverseString03(String str) {
+		
+		StringBuffer sb = new StringBuffer();
+		for(int i = str.length() -1, j =0; i >=0; i--) {
+			sb.append(str.charAt(i));
+		}
+		return sb.toString(); 	//StringBuffer 를 string으로 변환
+	}
+	
+	public String reverseString04(String str) {		// length 7이면, 0<->6, 1<->5, 2<->4, 3은 그대로
+		int length = str.length();
+		char[] chars = new char[length];
+		str.getChars(0, length, chars, 0);
+		
+		for( int i =0, j = length - 1; i < length/2; i++, j--) {
+			char temp = ' ';
+			temp = chars[i];
+			chars[i] = chars[j];
+			chars[j] = temp;
+		}
+		return new String(chars);
+	}
 	
 	void toUpperString(String str) {
 		
@@ -53,6 +85,17 @@ public class StringUtil {
 		}
 		System.out.print(ch);
 		}
+	}
+	
+	public String toUpperString02(String str) {
+		
+		char[] chars = new char[str.length()];
+		str.getChars(0,str.length(), chars, 0);
+		
+		for(int i =0; i < str.length(); i ++) {
+			if(chars[i] >= 'a' && chars[i] >='z') chars[i] -= 32;
+		}
+		return new String(chars);
 	}
 	
 	
