@@ -7,11 +7,12 @@ public class Circle extends Shape{
 		super("원", a);
 	}
 	
-	@Override
-	public void area(int a){
-		double cirArea = a * a * pi;
-		setArea(cirArea);
-		super.area(a);
-		
-	}
+	
+	  @Override 
+	  public void area(int a){ 
+		 double cirArea = a * a * pi;
+		 setArea(cirArea); super.area(a);
+	  
+	  }
+	 
 }
