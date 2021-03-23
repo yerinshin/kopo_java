@@ -76,6 +76,7 @@ public class Shape {
 		}
 	}
 
+	
 	public void area(int a) {
 		System.out.println("가로 " + a + "의 " + name + " 면적은 " + area + "입니다.");
 	}
