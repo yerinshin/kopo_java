@@ -1,6 +1,7 @@
 package kr.ac.kopo.day12.hw;
 
 import java.util.Random;
+
 import java.util.Scanner;
 
 public class ScissorsRockPaper implements Game{
@@ -34,20 +35,20 @@ public class ScissorsRockPaper implements Game{
 		if( me == you) {
 			System.out.println("비겼습니다.\n");
 			returnValue = -1;
-		}else if(me ==1) {
-			if(you ==2) {
+		}else if(me ==SCISSOR) {
+			if(you ==ROCK) {
 				System.out.println("You win\n");
 				returnValue =1;
 			}else System.out.println("You lose\n");
 			
-		}else if(me ==2) {
-			if(you ==3) {
+		}else if(me ==ROCK) {
+			if(you ==PAPER) {
 				System.out.println("You win\n");
 				returnValue =1;
 			}else System.out.println("You lose\n");
 
-		}else if(me == 3){
-			if(you == 1) {
+		}else if(me == PAPER){
+			if(you == SCISSOR) {
 				System.out.println("You win\n");
 				returnValue =1;
 			}else System.out.println("You lose\n");
