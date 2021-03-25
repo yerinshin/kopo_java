@@ -3,6 +3,7 @@ package kr.ac.kopo.day14;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Iterator;
+import java.util.LinkedList;
 import java.util.List;
 
 /*
@@ -12,7 +13,7 @@ import java.util.List;
  	- add() : 데이터 입력
 	- get(int index) : 데이터 추출
 	- size() : 크기 반환
-	- remove(int i ) : 인덱스 위치의 데이터를 삭제 (인덱스 빈 곳 채워짐)
+	- remove(int i) : 인덱스 위치의 데이터를 삭제 (인덱스 빈 곳 채워짐)
 	- remove(Object o) : 동일한 데이터를 삭제 ex) list.remove("봄");
 	    → 인덱스 가장 앞쪽의 동일 데이터 1개만 삭제 
 	- clear() : 모든 데이터를 삭제
@@ -82,6 +83,46 @@ public class ListMain {
 			System.out.print(ite.next() + " "
 					);
 		}
+		
+		System.out.println();
+		
+		
+		String searchStr = "two";
+		if(list.contains(searchStr)) {
+			System.out.println(searchStr + "은 존재합니다.");
+		}else {
+			System.out.println(searchStr + "은 존재하지 않습니다.");
+		}
+		
+		boolean bool = list.remove("two");
+		System.out.println("remove : " + bool);
+		
+		if(list.contains(searchStr)) {
+			System.out.println(searchStr + "은 존재합니다.");
+		}else {
+			System.out.println(searchStr + "은 존재하지 않습니다.");
+		}
+		
+		bool = list.remove("two");
+		System.out.println("remove : " + bool);
+		
+		System.out.println("첫번째 문자열 : " + list.get(0));
+		String removeStr = list.remove(0);
+		System.out.println("삭제된 문자열 : " + removeStr);
+		System.out.println("remove(0) 후 첫번째 문자열 : " + list.get(0));
+		
+		System.out.println("원소 총 개수 : " + list.size());
+		list.clear();
+		System.out.println("clear() 수행 후 원소 총 개수 : " + list.size());
+		
+		List<String> sub = new LinkedList<>();
+		sub.add("봄");
+		sub.add("여름");
+		
+		list.addAll(sub);
+		System.out.println("addAll() 후 원소의 개수 : " + list.size());
+		
+		
 		
 	}
 	
