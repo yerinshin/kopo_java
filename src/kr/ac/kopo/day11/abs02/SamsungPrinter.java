@@ -8,6 +8,7 @@ public class SamsungPrinter extends Printer {
 	}
 	*/
 	
+	@Override
 	public void print() {
 		System.out.println("삼성 프린터에서 출력중...");
 	}

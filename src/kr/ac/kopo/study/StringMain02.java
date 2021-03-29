@@ -1,4 +1,4 @@
-package kr.ac.kopo.day08;
+package kr.ac.kopo.study;
 
 import java.util.Arrays;
 import java.util.Scanner;

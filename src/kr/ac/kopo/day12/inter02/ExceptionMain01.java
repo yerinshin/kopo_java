@@ -24,7 +24,7 @@ public class ExceptionMain01 {
 		
 		try {
 			System.out.println(10 / num);
-			System.out.println("첫번째 문자 : " + str.charAt(0));
+			System.out.println("첫번째 문자 : " + str.charAt(0)); //앞에서 예외 걸리면 실행 되지 않음
 		} catch(Exception e) {
 			e.printStackTrace();
 		} 

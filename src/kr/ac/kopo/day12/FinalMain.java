@@ -11,8 +11,8 @@ import java.util.Random;
 	}
 }
 
-class Sub extends Super {
-	public void info() {
+class Sub extends Super {	//final 클래스였다면 상속 불가능
+	public void info() { //final 메소드였다면 재정의 불가능
 		System.out.println("Sub 클래스에서 재정의된 메소드...");
 //		MAX =50;   --> final 변수 재할당 할 수 없음. 오류남
 	}

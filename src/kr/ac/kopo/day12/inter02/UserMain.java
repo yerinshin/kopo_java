@@ -12,7 +12,7 @@ public class UserMain {
 		
 		
 		TV tv = new SamsungTV();
-//		tv = new LGTV();
+		tv = new LGTV();
 		
 		tv.powerOn();
 		tv.channelDown();
