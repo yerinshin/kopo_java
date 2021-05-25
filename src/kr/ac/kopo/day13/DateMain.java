@@ -29,8 +29,8 @@ class Dog {
 public class DateMain {
 	public static void main(String[] args) {
 
-		Calendar c = Calendar.getInstance();
-		System.out.println("c : " + c);
+		Calendar c = Calendar.getInstance(); //객체를 얻기위해
+		System.out.println("c : " + c); //주소
 		
 		int year = c.get(Calendar.YEAR);
 		int month = c.get(Calendar.MONTH) + 1;

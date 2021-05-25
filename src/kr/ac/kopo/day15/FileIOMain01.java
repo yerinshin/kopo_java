@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 
 public class FileIOMain01 {
 
-	public static void main(String[] args) throws Exception{
+	public static void main(String[] args)  throws Exception {
 		
 		 System.out.println("입력을 하세요. ctrl+z 을 누르면 종료합니다.");
 		

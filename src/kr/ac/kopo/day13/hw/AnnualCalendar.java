@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class AnnualCalendar {
 	Scanner sc = new Scanner(System.in);
-	Calendar c = Calendar.getInstance();
+	Calendar c = Calendar.getInstance(); //객체를 얻기위해
 
 	private int year;
 	private int month;

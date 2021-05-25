@@ -14,7 +14,7 @@ import java.util.Scanner;
 
 public class ExceptionMain06 {
 	
-	static void register() throws CheckIDException{
+	static void register()  throws CheckIDException {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("등록할 ID를 입력하세요 : ");
 		String id = sc.nextLine();

@@ -4,7 +4,7 @@ public class MethodMain01 {
 	
 	
 	/*
-	static Car printStar(char c, int cnt){   //참조형도 가능
+	static Car printStar(char c, int cnt){   //李몄“�삎�룄 媛��뒫
 		
 		for(int i = 0; i<cnt ; i++) {
 			System.out.print(c);
@@ -23,7 +23,7 @@ public class MethodMain01 {
 	 * @param c
 	 * @param cnt
 	 */
-	// 반환형 메소드명([매개변수]) {  }
+	// 諛섑솚�삎 硫붿냼�뱶紐�([留ㅺ컻蹂��닔]) {  }
 	static int printStar(char c, int cnt){
 		
 		for(int i = 0; i<cnt ; i++) {
@@ -44,9 +44,9 @@ public class MethodMain01 {
 		System.out.println("Hello");
 		printStar('!', 15);
 		System.out.println("Hi");
-		printStar('★', 5);
+		printStar('g', 5);
 		System.out.println("Good-bye");
-		printStar('♡', 5);
+		printStar('g', 5);
 	}
 
 }
