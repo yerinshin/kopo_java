@@ -2,6 +2,7 @@ package kr.ac.kopo.dao;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -22,28 +23,37 @@ public class BoardDAODB {
 	 */
 	public List<BoardVO> 전체게시글조회() throws Exception{
 		
+		List<BoardVO> list = new ArrayList<>();
 		Connection conn = null;
 		PreparedStatement pstmt = null;
 		try {
 			conn = new ConnectionFactory().getConnection();
 			
-			// 다시!!
+			StringBuilder sql = new StringBuilder();
+			sql.append("select no, title, writer ");
+			sql.append(", to_char(reg_date, 'yyyy-mm-dd') as reg_date ");
+			sql.append("  from tbl_board ");
+
+			pstmt = conn.prepareStatement(sql.toString());
+			
+			ResultSet rs = pstmt.executeQuery();
+			while(rs.next()) {
+				int no = rs.getInt("no");
+				String title =rs.getString("title");
+				String writer = rs.getString("writer");
+				String regDate = rs.getString("reg_date");
+				
+				BoardVO board = new BoardVO(no, title, writer, regDate);
+				list.add(board);
+			}
 			
 		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {
 			JDBCClose.close(conn, pstmt);
-			
 		}
-		
-		
-		
+
 		return list;
-	}
-	
-	public BoardVO 글번호조회(int no) throws Exception {
-		
-		return null;
 		
 	}
 	

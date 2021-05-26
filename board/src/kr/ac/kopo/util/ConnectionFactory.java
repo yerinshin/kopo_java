@@ -14,7 +14,7 @@ public class ConnectionFactory {
 			Class.forName("oracle.jdbc.driver.OracleDriver");
 			
 			//2�ܰ�
-			String url = "jdbc:oracle:thin:@192.168.119.119:1521:xe";
+			String url = "jdbc:oracle:thin:@192.168.217.57:1522:xe";
 			String user = "hr";
 			String password = "hr";
 			
