@@ -42,9 +42,6 @@ public class ThreadMain02 {
 		//누구로 시작할지, 모름/ thread Queue로 들어가는 것조차 경쟁(랜덤) A->B->A(X) , A->A->B->A->?(O)
 		
 		
-		
-		
-		
 		//1번째 thread
 		et.start(); 
 		
