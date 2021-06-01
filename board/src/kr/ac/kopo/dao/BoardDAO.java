@@ -16,7 +16,7 @@ public class BoardDAO {
 	/**
 	 * 전체 게시글 조회
 	 */
-	public List<BoardVO> 전체게시글조회() throws Exception{
+	public List<BoardVO> 전체게시글조회() throws Exception {
 		System.out.println("dao 전체 게시글 조회 ...");
 		return list;
 	}

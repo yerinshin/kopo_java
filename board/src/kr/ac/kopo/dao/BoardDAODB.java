@@ -85,7 +85,6 @@ public class BoardDAODB {
 	}
 	
 	public void 게시글수정(BoardVO board) throws Exception { //매개변수 개수나 종류가 수정되더라도 넘겨받는 데이터(제목, 날짜, 글쓴이 등등)는 어짜피 BoardVO 형태 중 하나이기 때문에 BoardVO로 아예 매개변수 설정 가능
-
 		
 	}
 	
