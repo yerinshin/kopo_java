@@ -1,6 +1,8 @@
 package kr.ac.kopo.service;
 
 import kr.ac.kopo.dao.UserDAO;
+import kr.ac.kopo.ui.AccountUI;
+import kr.ac.kopo.ui.BaseUI;
 import kr.ac.kopo.vo.UserVO;
 
 public class UserService {
@@ -23,19 +25,26 @@ public class UserService {
 		
 		if(loginedUser != null) {
 			System.out.println("[ 아이디 : " + loginedUser.getId() + ", 이름 : " + loginedUser.getName() + " 님 ] 로그인되었습니다.");
+			 
+			BaseUI.setSession(loginedUser); //login 된  id가 있으면 session줌
+			
+			
 		} else {
 			System.out.println("로그인 실패!");
 		}
+		
+		if(BaseUI.getSession() !=null) {
+			AccountUI accUI = new AccountUI();
+			accUI.execute();
+		}
 	}
 	
-	public void checkID(String id ) throws Exception {
+	
+	public int checkID(String id) throws Exception {
 		
-		if(dao.checkID(id)==1) {
-			System.out.println("이미 존재하는 아이디입니다. 다시 입력해주세요.");
-			
-		}
-		
+		return dao.checkID(id);
 	}
+
 	
 	
 }

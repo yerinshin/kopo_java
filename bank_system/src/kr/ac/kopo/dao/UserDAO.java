@@ -67,6 +67,7 @@ public class UserDAO {
 				loginedUser.setId(rs.getString("id"));
 				loginedUser.setName(rs.getString("name"));
 				loginedUser.setBirthDate(rs.getString("birth_date"));
+				loginedUser.setLastAccountDate(rs.getString("last_open_acc_date"));
 				
 			}
 			

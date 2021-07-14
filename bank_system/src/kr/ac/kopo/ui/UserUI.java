@@ -1,6 +1,6 @@
 package kr.ac.kopo.ui;
 
-public class BankUI extends BaseUI {
+public class UserUI extends BaseUI {
 
 	@Override
 	public void execute() throws Exception {
@@ -43,13 +43,13 @@ public class BankUI extends BaseUI {
 	
 	private int menu() {
 		
-		System.out.println("------------------------------");
+		System.out.println("----------------------------------------------------------");
 		System.out.println("\t 통합계좌 관리 시스템");
-		System.out.println("------------------------------");
+		System.out.println("----------------------------------------------------------");
 		System.out.println("\t 1.회원가입");
 		System.out.println("\t 2.로그인");
 		System.out.println("\t 0.종료");
-		System.out.println("------------------------------");
+		System.out.println("----------------------------------------------------------");
 		
 		int type = scanInt("메뉴 중 원하는 항목을 선택하세요 : ");
 		

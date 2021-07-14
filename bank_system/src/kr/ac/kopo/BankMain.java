@@ -1,12 +1,13 @@
 package kr.ac.kopo;
 
-import kr.ac.kopo.ui.BankUI;
+import kr.ac.kopo.ui.UserUI;
 
 public class BankMain {
 
 	public static void main(String[] args) {
-		
-		BankUI ui = new BankUI();
+
+				
+		UserUI ui = new UserUI();
 	
 		
 		try {
